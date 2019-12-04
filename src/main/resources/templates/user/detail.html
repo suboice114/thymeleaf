@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--防止红色波浪下划线-->
+<!--suppress ALL-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>User Detail</title>
+</head>
+<body>
+    <table border="1" width="200px">
+        <tr>
+            <td>用户id：</td>
+            <td th:text="${user.id}"></td>
+        </tr>
+        <tr>
+            <td>用户名：</td>
+            <td th:text="${user.name}"></td>
+        </tr>
+
+        <tr>
+            <td>用户年龄：</td>
+            <td th:text="${user.age}"></td>
+        </tr>
+
+        <tr>
+            <td>用户地址：</td>
+            <td th:text="${user.address}"></td>
+        </tr>
+    </table>
+</body>
+</html>

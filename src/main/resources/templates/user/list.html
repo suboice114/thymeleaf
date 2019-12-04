@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--防止红色波浪下划线-->
+<!--suppress ALL-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User list</title>
+</head>
+<body>
+<h3>用户列表</h3>
+<div>
+    <ul>
+        <li th:each="user:${users}">
+            <span th:text="${user.id}"></span> -
+            <span th:text="${user.name}"></span> -
+            <span th:text="${user.age}"></span> -
+            <span th:text="${user.address}"></span>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

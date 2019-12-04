@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--suppress ALL-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD+分页实例</title>
+</head>
+<body>
+
+<div style="margin:0px auto; width:500px">
+
+    <form action="/student/updateStudent" method="post">
+
+        sname: <input name="sname" th:value="${student.sname}"/> <br/>
+        sage: <input name="sage" th:value="${student.sage}"/> <br/>
+        score: <input name="score" readonly="readonly" th:value="${student.score}"/><br/>
+        address: <input name="address" th:value="${student.address}"/> <br/>
+
+        <input name="sid" type="hidden" th:value="${student.sid}"/>
+        <button type="submit">提交</button>
+    </form>
+</div>
+
+</body>
+</html>
